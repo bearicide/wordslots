@@ -1,64 +1,168 @@
-MATTBEAR - Word$lots! v1.0.0
-MATTBEAR - Word$lots! is a neon 4x4 browser slot machine built as an installable PWA. It includes a fixed-size 4x4 reel grid, resized 512x512 slot symbols, Click/Rewind cassette mode, bonus splash behavior, audio/SFX, a compact music player, mobile-friendly controls, and GitHub Pages-ready packaging.
-Live Links
-Main portal: https://bearicide.github.io
-The Choppa: https://bearicide.github.io/the-choppa
-All Fall Down: https://bearicide.github.io/-all-fall-down
-Core Features
-4x4 slot grid
-10-line evaluation: 4 rows, 4 columns, 2 diagonals
-Wild Bear substitution
-FX / Bonus CRT bonus splash trigger
-MATTBEAR free-spin symbol
-Click/Rewind cassette feature
-Full Reverse Mode
-Space-bar fast stop that does not reroll or change the selected result
-Touch, mouse, and keyboard controls
-Sound effects and music miniplayer
-PWA manifest and service worker
-Mobile-optimized layout
-RTP / Feature Rules
-Resting RTP: 92%
-Base Rewind RTP: 98.9%
-Full Reverse Mode RTP: 101%
-Click/Rewind bonus check becomes eligible every 50 spins at any level
-Click/Rewind must trigger before 250 spins since the last Rewind trigger
-Landing cassette during Rewind adds reverse spins
-Cassette retrigger upgrades play into Full Reverse Mode
-Controls
-Space: Spin
-Space while spinning: Fast stop without changing the locked result
-A: Start auto spin
-S: Stop auto spin
-+ / -: Adjust bet
-Buttons support mouse and touch input.
-Files
-```text
+[may]-6-26:
+
+🎰🌈 MATTBEAR - Word$lots! 🎧🐻
+CHAOS → SIGNAL SLOT TECHNOLOGY
+
+Word$lots! is a browser-based neon slot machine experience built around loud visuals, dark breakbeats, rewind mechanics, animated bonus events, and full-on arcade chaos.
+Because apparently normal slot machines weren't already enough blinking lights for the human nervous system.
+
+Designed by MATTBEAR as both a playable game and multimedia art project, Word$lots! combines:
+
+🎰 Custom slot mechanics
+🔁 RTP-changing rewind systems
+🎧 SoundCloud music integration
+🌧️ Digital rain visuals
+💥 Bonus splash events
+📱 Mobile-friendly controls
+⚡ Standalone browser deployment
+🐻 Original MATTBEAR branding
+🎮 FEATURES
+🎰 3-Reel Slot Engine
+Large 512x512+ reel windows
+Responsive scaling
+Stable UI sizing
+Animated spins
+Optimized symbol alignment
+Touch + mouse support
+🔁 CLICK / REWIND FEATURE
+
+Landing the cassette symbol activates Rewind Mode.
+
+Rewind Mode
+Reels spin backward
+RTP increases to 98.9%
+Additional cassette hits add spins
+FULL REVERSE MODE
+
+Retriggering during Rewind upgrades into:
+
+🔥 Reverse spinning reels
+🔥 Enhanced RTP: 101%
+🔥 Heavy visual FX
+🔥 Advanced bonus potential
+
+Because reality itself apparently needed a New Game+ mode.
+
+💰 PAY TABLE
+Combination	Reward
+🐻 WILD BEAR x3	50x + 3 Free Spins
+🎛️ FX x3	40x + Bonus Board
+🌈 MATTBEAR x3	20x + 5 Free Spins
+🎧 HEADPHONES x3	18x
+🎲 Any Triple	12x
+🔁 Cassette Trigger	Rewind Feature
+👥 Any Pair	2x
+🐻 Pair + Wild	2x + Free Spin
+🎲 BONUS BOARD
+
+When triggered:
+
+Full-screen splash event appears
+Animated strobe effects
+Neon overlays
+Digital rain visuals
+Character popup animations
+Expanded feature potential
+
+Includes the legendary encouragement:
+
+“RIGHT ON - STAY UP! GOOD LUCK!”
+
+Human civilization truly peaked when it invented glowing encouragement from fake slot machines.
+
+🎵 AUDIO SYSTEM
+
+Includes:
+
+Spin FX
+Reel stop sounds
+Near misses
+Jackpot overload
+Corrupted alarms
+Tape clicks
+Dark trap / breakbeat sound packs
+
+SoundCloud integration allows live soundtrack selection while playing.
+
+📱 MOBILE SUPPORT
+
+Optimized for:
+
+Desktop browsers
+Android devices
+Touch controls
+Mouse controls
+Responsive scaling
+PWA-ready deployment
+🧠 RTP SYSTEM
+Base RTP
+
+92%
+
+Rewind RTP
+
+98.9%
+
+Full Reverse RTP
+
+101%
+
+Bonus Logic
+Bonus rewind can occur roughly once every 50 spins
+Guaranteed trigger before 250 spins
+Dynamic luck meter system
+📂 FILE STRUCTURE
+/assets
+  /symbols
+  /audio
+  /backgrounds
+
 index.html
-manifest.webmanifest
-sw.js
-css/style.css
-js/app.js
-assets/
-  symbols/
-  pwa/
-  album-art/
-audio/
-  sfx/
-  tracks/
-```
-GitHub Pages Setup
-Upload the full folder contents to the repository root.
-Make sure `index.html` is in the root.
-Enable GitHub Pages for the repository.
-Open the published page in a browser.
-On mobile, use the browser menu and choose Add to Home Screen or Install App if offered.
-Asset Notes
-Slot symbols should be square PNG files at 512x512. Keep existing filenames when replacing art so the code continues to load them without path edits.
-Credits
-Created under the MATTBEAR / Bearicide creative system.
-Portal: https://bearicide.github.io
-Contact: mattbear86@hotmail.com
-SoundCloud: https://soundcloud.com/mattbear86
-Suno: https://suno.com/@mattbear86
-Technology is quietly human. I am loudly not.
+README.md
+🚀 INSTALLATION
+LOCAL
+Download project files
+Extract ZIP
+Open index.html
+GITHUB PAGES
+Upload files to repository
+Enable GitHub Pages
+Launch directly in browser
+🛠️ TECH STACK
+HTML5
+CSS3
+JavaScript
+Web Audio API
+Canvas animation systems
+Responsive UI scaling
+
+No bloated frameworks.
+No subscription model.
+No crypto nonsense.
+Just raw browser chaos stitched together with caffeine and bad sleep schedules.
+
+⚠️ DISCLAIMER
+
+Word$lots! is an entertainment parody experience and is not intended for real-money gambling.
+
+Please gamble responsibly in real life.
+Existence already has enough hidden microtransactions.
+
+👑 CREATED BY
+🌈🐻 MATTBEAR
+
+Digital Creator | Creative Systems | Chaos → Signal
+
+🌐 https://bearicide.github.io
+
+🎵 https://suno.com/@mattbear86
+
+🎧 https://soundcloud.com/mattbear86
+
+📸 https://instagram.com/mattbearig
+
+💤 FINAL MESSAGE
+
+WAKE UP.
+STAY UP.
+SPIN RESPONSIBLY.
