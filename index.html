@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MATTBEAR • ШØЯDPLΔY Slot Machine</title>
+  <meta name="description" content="Multi-file image-ready Wordplay slot machine with auto spin, bonus board, touch controls, and mobile-friendly layout." />
+  <link rel="preload" href="assets/skyline-bg.png" as="image" type="image/svg+xml" />
+  <link rel="preload" href="assets/jackpot-wordplay.png" as="image" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="orb one" aria-hidden="true"></div>
+  <div class="orb two" aria-hidden="true"></div>
+  <div class="orb three" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <header class="top-card">
+      <div class="hero-frame">
+        <img class="sticker flame" src="assets/deco-flame.png" alt="decorative flame" />
+        <img class="sticker bolt" src="assets/deco-lightning.png" alt="decorative lightning" />
+        <div class="brand-row">
+          <div class="hero-copy">
+            <div class="marquee marquee-rich">
+              <div class="marquee-art">
+                <img class="hero-bear" src="assets/hero-bear.png" alt="MATTBEAR neon bear" />
+              </div>
+              <div class="marquee-copy">
+                <div class="marquee-kicker">MATTBEAR presents</div>
+                <img class="wordmark" src="assets/header-mattbear.png" alt="MATTBEAR logo" />
+                <div class="marquee-title">ШØЯDPLΔY</div>
+                <div class="marquee-sub">neon slot machine</div>
+              </div>
+            </div>
+            <p class="tagline">Full reskin pass: skyline background, proper MATTBEAR header, matching neon hero art, and your mapped symbol set all in one build.</p>
+          </div>
+          <div class="badge-stack">
+            <span class="badge">🎰 reskinned</span>
+            <span class="badge">🌆 skyline</span>
+            <span class="badge">🐻 mattbear</span>
+            <span class="badge">📱 mobile</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <section class="machine" aria-labelledby="machine-title">
+        <h1 class="sr-only" id="machine-title">Wordplay slot machine</h1>
+
+        <div class="hud">
+          <div class="stat"><small>Coins</small><strong id="coins">250</strong></div>
+          <div class="stat"><small>Bet</small><strong id="bet">10</strong></div>
+          <div class="stat"><small>Free Spins</small><strong id="freeSpins">0</strong></div>
+          <div class="stat"><small>Last Win</small><strong id="lastWin">0</strong></div>
+          <div class="stat"><small>Total Win</small><strong id="totalWin">0</strong></div>
+        </div>
+
+        <div class="jackpot" id="jackpotText">Welcome to MATTBEAR • ШØЯDPLΔY. Pull the neon logic lever.</div>
+
+        <div class="reels" aria-label="slot machine reels">
+          <div class="reel" id="reel0"><div class="strip" id="strip0"></div></div>
+          <div class="reel" id="reel1"><div class="strip" id="strip1"></div></div>
+          <div class="reel" id="reel2"><div class="strip" id="strip2"></div></div>
+        </div>
+
+        <div class="controls">
+          <button class="btn green" id="spinBtn" type="button">🎯 Spin</button>
+          <button class="btn rainbow" id="autoBtn" type="button">🔁 Auto Spin</button>
+          <button class="btn red" id="stopBtn" type="button">⛔ Stop Auto</button>
+          <button class="btn yellow" id="freeBtn" type="button">🆓 Use Free Spin</button>
+        </div>
+
+        <div class="secondary-controls">
+          <button class="btn cyan" id="betDownBtn" type="button">➖ Bet</button>
+          <button class="btn cyan" id="betUpBtn" type="button">➕ Bet</button>
+          <button class="btn purple" id="maxBtn" type="button">💥 Max Bet</button>
+          <button class="btn dark" id="refillBtn" type="button">🪙 Refill</button>
+        </div>
+
+        <div class="secondary-controls tertiary">
+          <button class="btn dark" id="soundBtn" type="button" aria-pressed="false">🔇 Sound Off</button>
+          <button class="btn dark" id="partyBtn" type="button" aria-pressed="false">🌈 Party Mode</button>
+          <button class="btn dark" id="openBonusBtn" type="button">🎁 Open Bonus</button>
+          <button class="btn dark" id="resetBonusBtn" type="button">♻ Reset Bonus</button>
+        </div>
+
+        <p class="status" id="status">Ready. Space spins. Space again fast-stops without changing the result. A starts auto. S stops auto.</p>
+      </section>
+
+      <aside class="side-card">
+        <h2>Pay Table</h2>
+        <div class="paytable">
+          <div class="pay-row"><span>WILD BEAR x3</span><span>50x bet + 3 free spins</span></div>
+          <div class="pay-row"><span>FX x3</span><span>40x bet + bonus board</span></div>
+          <div class="pay-row"><span>MATTBEAR x3</span><span>20x bet + 5 free spins</span></div>
+          <div class="pay-row"><span>HEADPHONES x3</span><span>18x bet</span></div>
+          <div class="pay-row"><span>Any other triple</span><span>12x bet</span></div>
+          <div class="pay-row"><span>CLICK/REWIND cassette</span><span>Triggers Rewind Feature</span></div>
+          <div class="pay-row"><span>Base Rewind RTP</span><span>98.9%</span></div>
+          <div class="pay-row"><span>Full Reverse Mode</span><span>101% RTP</span></div>
+          <div class="pay-row"><span>Any pair</span><span>2x bet</span></div>
+          <div class="pay-row"><span>Pair + wild bear</span><span>2x bet + 1 free spin</span></div>
+        </div>
+
+        <h2 class="section-gap">Luck Meter</h2>
+        <div class="meter"><div class="fill" id="hypeFill"></div></div>
+        <p class="mini" id="hypeText">Luck: 0%</p>
+
+        <h2 class="section-gap">Live Art Set</h2>
+        <ul class="mini list-tight">
+          <li>Background uses <code>assets/skyline-bg.png</code></li>
+          <li>Header uses <code>assets/header-mattbear.png</code> + <code>assets/hero-bear.png</code></li>
+          <li>Reels use uploaded PNG tiles in <code>assets/symbols/</code></li>
+        </ul>
+
+        <h2 class="section-gap">Click/Rewind Cassette</h2>
+        <ul class="mini list-tight">
+          <li>Landing the cassette starts the Rewind Feature.</li>
+          <li>Rewind spins run the reels backward at <strong>98.9% RTP</strong>.</li>
+          <li>Landing another cassette during Rewind adds spins.</li>
+          <li>A retrigger upgrades the feature into <strong>Full Reverse Mode</strong> at <strong>101% RTP</strong>.</li>
+          <li>Bonus board cassette tiles can also queue Rewind or Full Reverse spins.</li>
+        </ul>
+      </aside>
+    </section>
+
+
+    <section class="player-card" aria-labelledby="player-title">
+      <div class="player-art-wrap">
+        <img id="playerArt" class="player-art" src="assets/album-art/binary-skies.png" alt="Binary Skies album art" />
+      </div>
+      <div class="player-main">
+        <div class="player-kicker">MATTBEAR mini player</div>
+        <h2 id="player-title">SoundCloud-ready track picker</h2>
+        <p class="mini player-note">Dropdown player using uploaded MP3s and album art. Swap in SoundCloud URLs later if you want the widget version, because apparently players need three passports now.</p>
+        <label class="track-label" for="trackSelect">Track</label>
+        <select id="trackSelect" class="track-select" aria-label="Choose a track"></select>
+        <div class="now-playing">
+          <strong id="nowTitle">Binary Skies</strong>
+          <span id="nowArtist">MATTBEAR</span>
+        </div>
+        <audio id="miniAudio" class="mini-audio" preload="metadata" controls src="audio/tracks/binary-skies.mp3"></audio>
+      </div>
+    </section>
+
+    <section class="row">
+      <section class="bonus-card">
+        <h2>Bonus Board</h2>
+        <p class="mini" id="bonusStatus">Pick three tiles.</p>
+        <div class="bonus-grid" id="bonusGrid"></div>
+      </section>
+
+      <section class="readme-card">
+        <h2>Quick Controls</h2>
+        <ul>
+          <li><strong>Space</strong> = spin / fast stop while reels are spinning</li>
+          <li><strong>A</strong> = start auto spin</li>
+          <li><strong>S</strong> = stop auto spin</li>
+          <li><strong>+</strong> / <strong>-</strong> = adjust bet</li>
+          <li>Touch and mouse work on all visible controls</li>
+          <li><strong>Fast stop</strong> only speeds the reveal; it does not reroll or change the result.</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">MATTBEAR • bearicide.github.io • Technology is quietly human. I am loudly not.</footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
