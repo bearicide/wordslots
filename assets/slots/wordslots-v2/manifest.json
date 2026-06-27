@@ -1,0 +1,75 @@
+{
+  "pack": "wordslots-asset-pack-v2",
+  "title": "Word$lots Asset Pack V2",
+  "intended_repo_path": "assets/slots/wordslots-v2/",
+  "style": {
+    "theme": "neon arcade wordplay slot machine",
+    "notes": [
+      "4x4 reels",
+      "cassette rewind / click mode",
+      "CRT bonus board",
+      "FX/glitch icon set",
+      "gold + cyan + pink cabinet palette",
+      "mobile-friendly UI pieces"
+    ]
+  },
+  "assets": {
+    "backgrounds": [
+      "bonus-crt-bg.png",
+      "skyline-bg.png",
+      "word-grid-bg.png"
+    ],
+    "symbols": [
+      "bonus-crt.png",
+      "cassette-rewind.png",
+      "fx-icon.png",
+      "jackpot-wordplay.png",
+      "mult-dollar.png",
+      "mystery-q.png",
+      "tile-d.png",
+      "tile-l.png",
+      "tile-o.png",
+      "tile-r.png",
+      "tile-s.png",
+      "tile-t.png",
+      "tile-w.png",
+      "wild-bear.png"
+    ],
+    "ui": [
+      "btn-auto.png",
+      "btn-max-bet.png",
+      "btn-play-announcement.png",
+      "btn-rewind.png",
+      "btn-spin.png",
+      "header-wordplay-subtitle.png",
+      "header-wordslots.png",
+      "knob-volume.png",
+      "luck-meter.png",
+      "miniplayer-shell.png",
+      "payline-glow.png",
+      "reel-frame-4x4.png"
+    ],
+    "icons": [
+      "app-icon-1024.png",
+      "app-icon-192.png",
+      "app-icon-512.png"
+    ],
+    "svg": [
+      "payline.svg",
+      "tile-frame.svg",
+      "wordslots-logo.svg"
+    ],
+    "css": [
+      "wordslots-assets.css"
+    ],
+    "docs": [
+      "preload-snippet.html"
+    ]
+  },
+  "drop_in_paths": {
+    "recommended": "assets/slots/wordslots-v2/",
+    "symbols": "assets/slots/wordslots-v2/symbols/",
+    "backgrounds": "assets/slots/wordslots-v2/backgrounds/",
+    "ui": "assets/slots/wordslots-v2/ui/"
+  }
+}

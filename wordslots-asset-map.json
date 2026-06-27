@@ -1,0 +1,13 @@
+{
+  "copy_into": "your Word$lots project root",
+  "runtime_asset_root": "assets/slots/wordslots-v2/",
+  "source_boards": "assets/source/wordslots/boards/",
+  "promo_images": "assets/promo/wordslots/",
+  "important_files": {
+    "symbols": "assets/slots/wordslots-v2/symbols/",
+    "ui": "assets/slots/wordslots-v2/ui/",
+    "backgrounds": "assets/slots/wordslots-v2/backgrounds/",
+    "css": "assets/slots/wordslots-v2/css/wordslots-assets.css",
+    "manifest": "assets/slots/wordslots-v2/manifest.json"
+  }
+}

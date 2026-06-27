@@ -1,0 +1,34 @@
+:root {
+  --ws-ink: #080812;
+  --ws-panel: #0d1025;
+  --ws-cyan: #19e7ff;
+  --ws-pink: #ff2cc4;
+  --ws-gold: #ffc741;
+  --ws-green: #6cff66;
+  --ws-purple: #7943ff;
+  --ws-white: #f4f8ff;
+}
+
+.wordslots-cabinet {
+  background-image:
+    radial-gradient(circle at 50% 20%, rgba(25,231,255,.18), transparent 34rem),
+    url("../backgrounds/skyline-bg.png");
+  background-size: cover;
+  color: var(--ws-white);
+  border: 2px solid rgba(255,255,255,.18);
+  box-shadow: 0 0 28px rgba(25,231,255,.25), inset 0 0 32px rgba(255,44,196,.12);
+}
+
+.wordslots-tile {
+  image-rendering: auto;
+  filter: drop-shadow(0 0 10px rgba(25,231,255,.35));
+}
+
+.wordslots-win {
+  animation: ws-win-glow .85s ease-in-out infinite alternate;
+}
+
+@keyframes ws-win-glow {
+  from { filter: drop-shadow(0 0 8px rgba(255,199,65,.55)); transform: scale(1); }
+  to { filter: drop-shadow(0 0 24px rgba(255,44,196,.95)); transform: scale(1.035); }
+}
